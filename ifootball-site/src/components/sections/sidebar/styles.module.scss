@@ -1,0 +1,90 @@
+.sidebar,
+.sidebarOpened {
+  position: fixed;
+  width: 80px;
+  height: 100vh;
+  background: #000000;
+  overflow: hidden;
+  transition: width 0.3s;
+  z-index: 3;
+}
+
+.sidebarOpened {
+  width: 220px;
+}
+
+.sidebar, .sidebarOpened {
+  .item {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      background: #3f485a;
+    }
+
+    svg {
+      position: absolute;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #fff;
+    }
+
+    span {
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 53%;
+      transform: translateY(-50%);
+      left: 80px;
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+
+  .item#burger:hover {
+    background: none;
+  }
+}
+
+.sidebar, .sidebarOpened {
+  .item#userRegistration {
+    position: absolute;
+    background: #000000;
+    bottom: 0;
+    margin: 0;
+    transition: all 0.2s;
+    border-radius: 15px 15px 0 0;
+
+    &:hover {
+      background: #000000;
+    }
+  }
+
+  .item#userRegistration .userProfile {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    svg {
+      position: absolute;
+      font-size: 20px;
+      left: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

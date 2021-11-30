@@ -1,0 +1,44 @@
+#inputSearch {
+  position: absolute;
+  left: 45%;
+  width: 25%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  font-size: 16px;
+  color: rgb(65, 65, 65);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 8px 20px;
+  transition: all 0.3s;
+
+  &::placeholder {
+    color: rgb(65, 65, 65);
+  }
+
+  &:hover {
+    background: #dfdfdf;
+    cursor: pointer;
+  }
+
+  &:focus {
+    background: #e0e0e0;
+    cursor: auto;
+    width: 30%;
+  }
+
+  @media (max-width: 830px) {
+    left: 40%;
+    width: 40%;
+
+    &:focus {
+      background: #747d8c;
+      width: 46%;
+    }
+  }
+
+  @media (max-width: 568px) {
+    left: 26%;
+    width: 34%;
+  }
+}

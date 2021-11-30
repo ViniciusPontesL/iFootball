@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    background: #fff;
+    padding: 50px;
+
+      .customInput {
+        background: #ecedf3;
+        font-size: 14px;
+        text-align: center;
+        height: 40px;
+        color: #333;
+        box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+        outline: none;
+        border: none;
+        padding: 0 10px;
+        width: 50%;
+        transition: all 0.3s;
+        margin: 10px;
+      }
+      
+      .customInput:hover {
+        background: #eef0f8;
+      }
+      
+      .customInput:focus {
+        background: #f0f3ff;
+      }
+
+      button {
+        background: #2ed573;
+      }
+
+      .logoutbtn {
+        border-radius: 5px;
+        background: #ff4747;
+        color: #fff;
+        padding: 10px;
+        outline: none;
+        border: none;
+      }
+      
+      .logoutbtn:hover {
+        cursor: pointer;
+        background: #ff5454;
+      }
+      
+      .logoutbtn:active {
+        background: #fd3c3c;
+      }
+      
+      .logoutbtn:disabled {
+        cursor: not-allowed;
+        background: #8ec5fc;
+      }
+  }
+}
